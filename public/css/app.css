@@ -73,6 +73,75 @@ body {
   color: #212529;
   text-align: left;
   background-color: #f8fafc;
+ 
+}
+
+/*For nav bar animation*/
+
+
+.nav-item{
+  position:absolute;
+  position: relative;
+  font-size: 17px;
+  transition:0.7s;
+  margin: 0 5px;
+  border-radius: 10%;
+  transition: 0.5s;
+}
+
+.nav-item:hover{
+  background: lightblue;
+  box-shadow: 0 0 15 lightblue ;
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+/* For the glowing links in the contact */
+.links-wrapper{
+  display: flex;
+  list-style: none;
+  margin-left: 200px;
+  height: 40h;
+  align-items: center;
+ 
+}
+
+.link-wrapper{
+  
+  position: relative;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  background: #171515;
+  line-height: 60px; 
+  border-radius:50%;
+  margin:0 15px;
+  
+}
+.link-wrapper:before{
+  position: absolute;
+  content: '';
+  top:0;
+  left:0;
+  background: rgb(0, 140, 255);
+  height:100%;
+  width:100%;
+  border-radius: 50%;
+  z-index:-1;
+  transform: scale(1.1);
+  transition: .75s;
+}
+
+.link-wrapper:hover:before{
+  filter: blur(3px);
+  transform: scale(1.3);
+  box-shadow: 0 0 15px rgb(0, 140, 255);
 }
 
 .img-container{
@@ -99,6 +168,12 @@ body {
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+/*For the student and result pic in the show*/
+.result-student{
+  height: 500px;
+  width: 45%;
 }
 
 .img-darken{

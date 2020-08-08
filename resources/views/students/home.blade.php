@@ -11,6 +11,7 @@
             <th scope="col">Standard</th>
             <th scope="col">Phone No.</th>
             <th scope="col">Address</th>
+            <th scope="col">Paid Upto</th>
           </tr>
         </thead>
         <tbody>
@@ -23,6 +24,7 @@
                         <td>{{$student->standard}}</td>
                         <td>{{$student->phno}}</td>
                         <td>{{$student->address}}</td>
+                        <td>{{$student->fee}}</td>
                         <td><a class="btn btn-primary" href="/students/{{$student->id}}/edit">Edit</a></td>
                     <form action="/students/{{$student->id}}" method="POST" enctype="multipart/form-data">
                         @csrf

@@ -28,6 +28,23 @@
         <label>Student Address</label>
         <input type="text" name="address" class="form-control" value="{{$student->address}}">
       </div>
+      <div class="form-group">
+        <label >Paid Upto</label>
+        <select name="fee" class="form-control" >
+          <option>Baisakh</option>
+          <option>Jesth</option>
+          <option>Ashar</option>
+          <option>Shrawan</option>
+          <option>Bhadra</option>
+          <option>Ashwin</option>
+          <option>Kartik</option>
+          <option>Mangsir</option>
+          <option>Push</option>
+          <option>Magh</option>
+          <option>Falgun</option>
+          <option>Chaitra</option>
+        </select>
+      </div>
       <input type="hidden" name="_method" value="PUT">
     <button type="submit" class="btn btn-primary">Submit</button>
   

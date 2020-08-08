@@ -18,10 +18,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" >
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -30,19 +31,19 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" style="position: relative" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                    <ul class="navbar-wrapper navbar-nav mr-auto">
+                        <li class="nav-item nav-itema active">
                             <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
                           </li>
-                          <li class="nav-item">
+                          <li class="nav-item nav-itema">
                             <a class="nav-link" href="/about">Our School</a>
                           </li>
-                          <li class="nav-item">
+                          <li class="nav-item nav-itema">
                             <a class="nav-link" href="/ourstudents">Our Students</a>
                           </li>
-                          <li class="nav-item">
+                          <li class="nav-item nav-itema">
                             <a class="nav-link" href="/contact">Contact Us</a>
                           </li>
                     </ul>
